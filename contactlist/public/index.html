@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+    <head>
+        <title>Progrez</title>
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link href='http://fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="container" ng-controller="AppCtrl">
+            <h1>Progrez</h1>
+
+            <div id="streams">
+                <div class="row">
+                  <div class="col-xs-4">
+                      <input type="text" id="trello_api" placeholder="Enter Trello API Here">
+                      <input type="text" id="trello_boardid" placeholder="Enter Trello Board ID Here">
+                  </div>
+                  <div class="col-xs-4">
+                      <input type="text" id="habitica_usr_api" placeholder="Enter Habitica usr API Here">
+                      <input type="text" id="habitica_pass_api" placeholder="Enter Habitica pass API Here">
+                  </div>
+                </div>
+                <div class="col-xs-4">
+                    <h3>Trello</h3>
+                    <div class="stream">
+                        <div class="card" ng-repeat="aCard in cardList">
+                            <b>{{aCard}}</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <h3>Habitica</h3>
+                    <div class="stream">
+                        <div class="card" ng-repeat="bCard in habiticaList">
+                            <b>{{bCard}}</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <h3>Add Stream</h3>
+                    <div class="stream">
+                        <!--glyphicon plus-->
+                        <div id="plus-stream">
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <h1>+</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-xs-12 center">
+                <button ng-click="saveAPIs()">Save APIs</button>
+                <button ng-click="loadData()">Load Data</button>
+            </div>
+            <!--
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="contact in contactlist">
+                        <td>{{contact.name}}</td>
+                        <td>{{contact.email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            -->
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="controllers/controller.js"></script>
+    </body>
+</html>

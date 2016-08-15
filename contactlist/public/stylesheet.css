@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+    vertical-align: top;
+    font-family: 'Capriola', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.streams {
+    display: inline-block;
+}
+
+.stream {
+    height: auto;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.card {
+    height: 40px;
+    border: 1px solid darkgreen;
+    border-radius: 3px;
+    background-color: lightblue;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#plus-stream {
+    height: 50%;
+}
