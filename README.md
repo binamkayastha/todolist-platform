@@ -1,4 +1,4 @@
-# todolist-platform [Temporarily Abandoned]
+# todolist-platform [Abandoned]
 Combines many progress apps into one easy viewing. Done at BridgeHacs. First time using MEAN stack. (AngularJS)
 
 ## Supported Todo's
