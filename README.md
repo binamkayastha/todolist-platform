@@ -25,3 +25,8 @@ I've been moving around and using different todolist applications recently, and 
 Right now I'm using a combination of NirvanaHQ, Wunderlist, and Trello. NirvanaHQ currently doesn't have an API, so it would be pointless to continue this project for me until then. I also want to later include email in this list.
 
 Yoke also achieves something similar. I'm focusing on a WunCur now: https://github.com/binamkayastha/WunCur
+
+Update: No longer focusing on WunCur, now I am trying to create my own, called ETodo. In the future this may just be a plugin to that application. Until then, I have no idea.
+
+
+![Screenshot of current application](todoplatform.png)
